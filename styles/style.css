@@ -1,0 +1,50 @@
+body {
+  --font-weight: 500;
+  font-family: 'Jura', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--font-weight);
+  font-size: 16px;
+  font-style: normal;
+
+  background-color: #fff;
+  color: #575757;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  font-size: 4em;
+
+  color: black;
+}
+
+header {
+}
+
+.nav {
+  font-weight: 700;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav li {
+  color: #575757;
+  transition: color 500ms;
+}
+
+.nav li:hover {
+  color: black;
+  transition: color 500ms;
+}
+
+.page-divider {
+  border-bottom: 1px solid #575757;
+}
