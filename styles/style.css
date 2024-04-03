@@ -20,9 +20,6 @@ body {
   color: black;
 }
 
-header {
-}
-
 .nav {
   font-weight: 700;
 }
@@ -56,4 +53,12 @@ header {
   padding: 10px;
   margin: 10px;
   border: solid 1px #575757;
+}
+
+div.card:nth-of-type(2n) .card-image {
+  order: 0;
+}
+
+div.card:nth-of-type(2n) .card-content {
+  order: 1;
 }
