@@ -71,9 +71,6 @@ a:link {
 }
 
 @media (max-width: 480px) {
-  .card-image img {
-  }
-
   .card {
     flex-direction: column;
   }
