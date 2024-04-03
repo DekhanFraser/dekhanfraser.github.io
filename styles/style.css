@@ -66,6 +66,10 @@ a:link {
   text-align: justify;
 }
 
+p {
+  text-align: justify;
+}
+
 .card-image img {
   max-width: 200px;
 }
