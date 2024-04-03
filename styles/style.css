@@ -37,14 +37,23 @@ header {
 
 .nav li {
   color: #575757;
-  transition: color 500ms;
+  font-size: 16px;
+  transition: all 500ms ease;
 }
 
 .nav li:hover {
   color: black;
-  transition: color 500ms;
 }
 
 .page-divider {
   border-bottom: 1px solid #575757;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+
+  padding: 10px;
+  margin: 10px;
+  border: solid 1px #575757;
 }
