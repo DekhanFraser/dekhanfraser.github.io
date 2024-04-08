@@ -66,6 +66,10 @@ a:link {
   margin: 10px;
 }
 
+.content li {
+  text-align: justify;
+}
+
 .card-content {
   text-align: justify;
 }
