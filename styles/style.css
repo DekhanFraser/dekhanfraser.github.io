@@ -58,8 +58,12 @@ a:link {
   gap: 1em;
 
   padding: 10px;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
   border: solid 1px #575757;
+}
+
+.content {
+  margin: 10px;
 }
 
 .card-content {
