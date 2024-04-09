@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tech Post: Difference in CSS element positioning.</title>
+  </head>
+
+  <body>
+    <div class="canvas">
+      <header>
+        <div class="logo">ΛIZMAYLOV</div>
+        <div class="nav">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/blog/about.html">About</a></li>
+            <li><a href="/blog/contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="page-divider"></div>
+      <main class="content">
+        <h1>
+          What are the differences between relative, absolute, and fixed
+          positioning?
+        </h1>
+        <p>
+          We know that every element on a web page is rendered as a block, a
+          rectangle with adjustable height and width. The CSS positioning
+          properties allow us to manipulate where in the visible area a
+          particular block is rendered and how, relative to its neighbors,
+          primary ancestor or the entire viewport.
+          <em>Relative, absolute and fixed</em> are just three of 5 possible
+          options for the positioning property and they all have their specific
+          quirks that make them useful.
+        </p>
+        <h3>Relative positioning</h3>
+        <p>
+          is pretty easy to understand, once you figure out which element the
+          change is relative to. When applying relative positioning only and
+          making no other changes, the element will effectively stay the same,
+          wherever it is in the document flow. To be able to see a change, you
+          need to specify one or a multiple of other attributes:
+          <em>top, right, bottom, left</em>
+        </p>
+        <p>
+          Once you apply any of the additional attributes, the element will move
+          an appropriate distance in the opposite direction. So a "left: 10px"
+          will move the element 10px away from where its original left edge
+          would have been in the standard document flow. The important bit here
+          is that the element stays in the same order of elements in the
+          document flow, and its position is changed <em>relative</em> to that
+          position.
+        </p>
+        <p>
+          Imagine you are in a room with you family or friends and everyone has
+          taken their usual place on the couch, the armchair, maybe a couple of
+          bean-bags, and you are all watching a movie on TV. That is the
+          document flow - the usual position of the usual faces. But then you
+          decide to move yourself on your beanbag closer to the TV, perhaps in
+          front of the couch where your parents are sitting. You are still in
+          the same room, watching the same TV, but your position relative to
+          everyone else has changed.
+        </p>
+        <h3>Absolute positioning</h3>
+        <p>
+          is very handy as it allows you to teleport the element around within
+          its nearest parent that also has absolute or relative positioning.
+          This may be incredibly useful as using the same
+          <em>top, right, bottom, left</em> attributes, you can arrange elements
+          with pixel perfect precision within their parent element. The big
+          caveat for this however, is that an absolutely positioned element is
+          completely broken out of the document flow on the page, meaning that
+          it stops affecting other elements and it is not affected by other
+          elements.
+        </p>
+        <p>
+          This way of positioning can be imagined somewhat like teleportation,
+          or hyperspace travel. Elements in normal space are not aware that
+          something is moving through them behind the scenes and stick to their
+          element flow on the page, where as te absolutely positioned element
+          can teleport anywhere in the solar system, even overlapping another
+          planet, wich would certainly cause some catastrophic consequences for
+          the element in real space, but on a web-page, it merel makes it
+          overlap other elements and create difficulties with reading.
+        </p>
+        <h3>Fixed positioning</h3>
+        <p>
+          is kind of like a sticker. Imagine you have a browser open and you
+          have a fly sit on your screen. You can scroll the page up and down and
+          sideways, but if the fly is not scared, it will just keep sitting on
+          top of all the content, completely ignoring you, rubbing its hands and
+          making malicious plans. Fixed positioning is always relative to the
+          viewport of the browser and ignores any and all other elements.
+        </p>
+        <p>
+          Another example would be to imagine you are wearing glasses and you
+          get a smudge on the glass. No matter where you look in the world
+          through those glasses, the smudge will always be on top of whetever
+          you see.
+        </p>
+        <h3>Other positioning options</h3>
+        <p>
+          There are two other possible positioning options, which are
+          <em>static</em> and <em>sticky</em>. Static is the default state of an
+          element, in the event that you have not applied any other positioning
+          attribute.
+        </p>
+        <p>
+          Sticky on the other hand has an interesting way of interacting with
+          its parent element. Lets say you have a table with a header row. As
+          you scroll down through the table, a sticky header row will appear
+          normal until you scroll past it, at which point it will stick at the
+          top of the page and behave like a fixed element within its parent
+          element. This can be used for many semi-permanent applictions, like
+          article breadcrumbs within "endless" pages of articles, where new
+          posts keep appearing as you keep scrolling.
+        </p>
+        <p>
+          I hope this will give you a better undestanding of the positioning
+          property and help avoid confusion.
+        </p>
+      </main>
+      <footer>© 2024 Alex Izmaylov</footer>
+    </div>
+  </body>
+</html>
